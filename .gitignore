@@ -1,0 +1,4 @@
+like_and_share_twitter_bot/config.py
+*.egg-info
+__pycache__/
+
