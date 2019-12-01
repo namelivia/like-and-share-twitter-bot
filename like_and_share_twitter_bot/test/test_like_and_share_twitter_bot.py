@@ -3,7 +3,6 @@ import unittest
 
 
 class TestRunning(unittest.TestCase):
-
     def setUp(self):
         pass
 
@@ -11,5 +10,5 @@ class TestRunning(unittest.TestCase):
         self.assertEqual(True, True)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
