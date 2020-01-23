@@ -13,19 +13,18 @@ Clone the project, navigate to its root folder and execute `pip3 install -e . --
 
 ## Configuration
 
-Copy `like_and_share_twitter_bot/config.example.py` to `like_and_share_twitter_bot/config.py`
+To execute the script the following environment variables must be set.
 
-Then open the file with a text editor and replace the default values with your actual values.
-
-* `consumerKey`: Your Twitter account consumer key.
-* `consumerSecret`: Your Twitter account consumer secret.
-* `accessTokenKey`: Your Twitter account access token key.
-* `accessTokenSecret`: Your Twitter account access token secret.
-* `searchString`: The [Twitter search](https://help.twitter.com/en/using-twitter/twitter-advanced-search) string. e.g. `cats OR kitties`
-* `chanceToAct`: The chances to actually do something or just idle (from 0 to 100). e.g. `40`
-* `chanceToFavorite`: The chances to mark a tweet as favorite (from 0 to 100). e.g. `20`
-* `chanceToFollow`: The chances to follow the profile who tweeted (from 0 to 100). e.g. `15`
-* `language`: The language code for the [Twitter search](https://help.twitter.com/en/using-twitter/twitter-advanced-search). e.g. `en`
+* `CONSUMER_KEY`: Your Twitter account consumer key.
+* `CONSUMER_SECRET`: Your Twitter account consumer secret.
+* `ACCESS_TOKEN_KEY`: Your Twitter account access token key.
+* `ACCESS_TOKEN_SECRET`: Your Twitter account access token secret.
+* `SEARCH_STRING`: The [Twitter search](https://help.twitter.com/en/using-twitter/twitter-advanced-search) string. e.g. `cats OR kitties`
+* `CHANCE_TO_ACT`: The chances to actually do something or just idle (from 0 to 100). e.g. `40`
+* `CHANCE_TO_FAVORITE`: The chances to mark a tweet as favorite (from 0 to 100). e.g. `20`
+* `CHANCE_TO_FOLLOW`: The chances to follow the profile who tweeted (from 0 to 100). e.g. `15`
+* `LANGUAGE`: The language code for the [Twitter search](https://help.twitter.com/en/using-twitter/twitter-advanced-search). e.g. `en`
+* `IDLE_PERIOD`: The number of seconds the script will wait before executing. e.g. `900`
 
 ## Usage
 
