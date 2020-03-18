@@ -1,4 +1,4 @@
-# Like And Share Twitter Bot [![Build Status](https://travis-ci.com/namelivia/like-and-share-twitter-bot.svg?branch=master)](https://travis-ci.com/namelivia/like-and-share-twitter-bot)
+# Like And Share Twitter Bot [![tag](https://img.shields.io/github/tag/namelivia/like-and-share-twitter-bot.svg)](https://github.com/namelivia/like-and-share-twitter-bot/releases) [![Build Status](https://travis-ci.com/namelivia/like-and-share-twitter-bot.svg?branch=master)](https://travis-ci.com/namelivia/like-and-share-twitter-bot)
 
 This is a Python script I made one day after work, it will search for a tweet and then make favorite or follow the profile, all condimented with a bit of randomness.
 
