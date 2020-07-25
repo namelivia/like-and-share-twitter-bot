@@ -1,15 +1,15 @@
-# Like And Share Twitter Bot [![tag](https://img.shields.io/github/tag/namelivia/like-and-share-twitter-bot.svg)](https://github.com/namelivia/like-and-share-twitter-bot/releases) [![Build Status](https://travis-ci.com/namelivia/like-and-share-twitter-bot.svg?branch=master)](https://travis-ci.com/namelivia/like-and-share-twitter-bot)
+# Like And Share Twitter Bot [![tag](https://img.shields.io/github/tag/namelivia/like-and-share-twitter-bot.svg)](https://github.com/namelivia/like-and-share-twitter-bot/releases) [![Build Status](https://travis-ci.com/namelivia/like-and-share-twitter-bot.svg?branch=master)](https://travis-ci.com/namelivia/like-and-share-twitter-bot) [![codecov](https://codecov.io/gh/namelivia/like-and-share-twitter-bot/branch/master/graph/badge.svg)](https://codecov.io/gh/namelivia/like-and-share-twitter-bot)
 
 This is a Python script I made one day after work, it will search for a tweet and then make favorite or follow the profile, all condimented with a bit of randomness.
 
 ## Requeriments
 
-* python3
-* pip3
+* python3.7
+* pipenv
 
 ## Installation
 
-Clone the project, navigate to its root folder and execute `pip3 install -e . --user` for installing it's dependencies.
+Clone the project, navigate to its root folder and execute `pipenv install` for installing it's dependencies.
 
 ## Configuration
 
@@ -28,11 +28,15 @@ To execute the script the following environment variables must be set.
 
 ## Usage
 
-Just execute `like_and_share_twitter_bot/like_and_share_twitter_bot.py` and if everything is properly configured it will search for a tweet (or not), will make it favorite (or not) and follow the profile who tweeted (or not).
+Just execute `pipenv run python main.py` and if everything is properly configured it will search for a tweet (or not), will make it favorite (or not) and follow the profile who tweeted (or not).
 
 ## Testing
 
 For executing the tests just execute `python3 -m unittest discover` on the project's root folder.
+
+## Docker deployment
+
+A Docker image for a containerized development is included, when the container is running the bot. Find it on [DockerHub](https://hub.docker.com/r/namelivia/like-and-share-twitter-bot).
 
 ## Contributing
 Any suggestion, bug reports, or any other kind enhacements are welcome. Just [open an issue first](https://github.com/namelivia/like-and-share-twitter-bot/issues/new) for creating a PR remember this project has linting checkings so any PR should comply with them before beign merged, this checks will be automatically applied when opening or modifying the PR's.
