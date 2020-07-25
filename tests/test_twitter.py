@@ -29,13 +29,14 @@ class TestTwitter(TestCase):
         )
 
     def test_get_tweet(self):
-        terms = ['term1&term2']
+        terms = 'term1&term2'
         tweets = [mock.Mock(), mock.Mock()]
         self.twitter_api_mock.GetSearch.return_value = tweets
+        selected_tweet = self.twitter.get_tweet(terms)
         self.twitter_api_mock.GetSearch.assert_called_once_with(
-            "q=term1&term2&result_type=recent&lang=en&count=100"
+            raw_query="q=term1&term2&result_type=recent&lang=en&count=100"
         )
-        self.assertIn(tweets, self.twitter.get_tweet(terms))
+        self.assertIn(selected_tweet, tweets)
 
     def test_make_favorite(self):
         tweet = mock.Mock()
