@@ -18,6 +18,9 @@ class Factory():
         random = Random()
         return Bot(
             twitter,
-            self.config,
+            self.config.get('chance_to_act'),
+            self.config.get('chance_to_follow'),
+            self.config.get('chance_to_favorite'),
+            self.config.get('search_string'),
             random
         )
