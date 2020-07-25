@@ -1,4 +1,3 @@
-import twitter
 import urllib.parse
 
 
@@ -13,10 +12,10 @@ class Bot:
         random
     ):
         self.twitter = twitter
-        self.chance_to_act = chance_to_act,
-        self.chance_to_favorite = chance_to_favorite,
-        self.chance_to_follow = chance_to_follow,
-        self.search_string = search_string,
+        self.chance_to_act = chance_to_act
+        self.chance_to_favorite = chance_to_favorite
+        self.chance_to_follow = chance_to_follow
+        self.search_string = search_string
         self.random = random
 
     def should_act(self):
@@ -30,7 +29,7 @@ class Bot:
 
     def run(self):
         terms = urllib.parse.quote_plus(self.search_string)
-        tweet = twitter.get_tweet(terms)
+        tweet = self.twitter.get_tweet(terms)
         if self._should_favorite():
             self.twitter.make_favorite(tweet)
         if self._should_follow():
