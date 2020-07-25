@@ -1,5 +1,6 @@
 from .bot import Bot
 from .twitter import Twitter
+from .random import Random
 
 
 class Factory():
@@ -14,7 +15,9 @@ class Factory():
             self.config.get("access_token_secret"),
             self.config.get("language")
         )
+        random = Random()
         return Bot(
             twitter,
-            self.config
+            self.config,
+            random
         )

@@ -7,9 +7,11 @@ class TestBot(TestCase):
     def setUp(self):
         self.twitter = mock.Mock()
         self.config = mock.Mock()
+        self.random = mock.Mock()
         self.bot = Bot(
             self.twitter,
-            self.config
+            self.config,
+            self.random
         )
 
     def test_runnig(self):

@@ -1,21 +1,25 @@
-import random
 import twitter
 import urllib.parse
 
 
 class Bot:
-    def __init__(self, twitter, config):
+    def __init__(self, twitter, config, random):
         self.twitter = twitter
         self.config = config
+        self.random = random
 
     def should_act(self):
-        return random.randint(0, 100) < self.config.get('chance_to_act')
+        return self.random.get_percentage() < self.config.get('chance_to_act')
 
     def _should_favorite(self):
-        return random.randint(0, 100) < self.config.get('chance_to_favorite')
+        return self.random.get_percentage() < self.config.get(
+            'chance_to_favorite'
+        )
 
     def _should_follow(self):
-        return random.randint(0, 100) < self.config.get('chance_to_follow')
+        return self.random.get_percentage() < self.config.get(
+            'chance_to_follow'
+        )
 
     def run(self):
         terms = urllib.parse.quote_plus(self.config.get('search_string'))
