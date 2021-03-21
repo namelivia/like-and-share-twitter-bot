@@ -1,0 +1,3 @@
+#!/bin/bash
+pipenv run pytest --cov-report=xml --cov=like_and_share_twitter_bot && \
+pipenv run codecov --commit=$1 -t $2

@@ -7,9 +7,15 @@ verify_ssl = true
 pytest = "*"
 mock = "*"
 pytest-cov = "*"
+codecov = "*"
+black = "*"
+pre-commit = "*"
 
 [packages]
 python-twitter = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
