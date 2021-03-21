@@ -11,14 +11,14 @@ class TestBot(TestCase):
         self.chance_to_act = 20
         self.chance_to_follow = 20
         self.chance_to_favorite = 20
-        self.search_string = 'search_string'
+        self.search_string = "search_string"
         self.bot = Bot(
             self.twitter,
             self.chance_to_act,
             self.chance_to_favorite,
             self.chance_to_follow,
             self.search_string,
-            self.random
+            self.random,
         )
 
     def test_should_act(self):

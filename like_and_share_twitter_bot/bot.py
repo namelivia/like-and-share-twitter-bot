@@ -9,7 +9,7 @@ class Bot:
         chance_to_follow,
         chance_to_favorite,
         search_string,
-        random
+        random,
     ):
         self.twitter = twitter
         self.chance_to_act = chance_to_act
