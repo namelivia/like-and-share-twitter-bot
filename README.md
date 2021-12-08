@@ -25,6 +25,7 @@ To execute the script the following environment variables must be set.
 * `CHANCE_TO_FOLLOW`: The chances to follow the profile who tweeted (from 0 to 100). e.g. `15`
 * `LANGUAGE`: The language code for the [Twitter search](https://help.twitter.com/en/using-twitter/twitter-advanced-search). e.g. `en`
 * `IDLE_PERIOD`: The number of seconds the script will wait before executing. e.g. `900`
+* `SENTRY_URL`: If set errors will be sent to [Sentry](https://sentry.io).
 
 ## Usage
 
