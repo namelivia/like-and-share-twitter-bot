@@ -5,7 +5,6 @@ import time
 import os
 
 if __name__ == "__main__":
-
     try:
         sentry_sdk.init(os.environ["SENTRY_URL"], traces_sample_rate=1.0)
     except Exception:
